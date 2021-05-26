@@ -4,10 +4,10 @@
     <nav>
       <p v-if="!notas.length">No hay notas guardadas</p>
       <ul v-if="notas.length">
-        <li v-for="nota in notas" v-bind:key="nota.titulo">
+        <li v-for="nota in notas" :key="nota.titulo">
           <button
-            v-on:click="notaActual = nota"
-            v-bind:class="{ active: nota === notaActual }"
+            @click="notaActual = nota"
+            :class="{ active: nota === notaActual }"
           >
             {{ nota.titulo }}
           </button>
