@@ -14,10 +14,10 @@
         </li>
       </ul>
     </nav>
-    <div v-if="notaActual" class="“nota-actual”">
-      <h2>{{ notaActual.titulo }}</h2>
+    <div v-if="notaActual" class="current-note">
+      <input v-model="notaActual.titulo" />
 
-      <p>{{ notaActual.contenido }}</p>
+      <textarea v-model="notaActual.contenido"> </textarea>
     </div>
   </div>
 </template>
