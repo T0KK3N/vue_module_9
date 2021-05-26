@@ -1,8 +1,18 @@
 <template>
   <h1>Bienvenido al curso de Vue</h1>
+  <p>{{ message }}</p>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: "App",
+  data: function() {
+    return {
+      message: "Hola Mundo",
+    };
+  },
+};
+</script>
 
 <style scoped>
 body {
