@@ -1,3 +1,10 @@
+<template>
+  <h1>Bienvenido al curso de Vue</h1>
+</template>
+
+<script></script>
+
+<style scoped>
 body {
   padding: 20px 30px;
 }
@@ -71,3 +78,4 @@ nav {
   font-size: 18px;
   color: #606c76;
 }
+</style>
